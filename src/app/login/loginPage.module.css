@@ -34,6 +34,24 @@
     background-color: #111;
 } 
 
-.socialButton:nth-child(3) {
+.socialButton:last-child {
     background-color: #087BEA;
 } 
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 50px 100px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .wrapper {
+        padding: 30px;
+        
+    }
+
+    .socialButton {
+        font-weight: 400;
+        font-size: 14px;
+    }
+}
