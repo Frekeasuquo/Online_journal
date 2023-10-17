@@ -16,7 +16,7 @@
     background-color: transparent;
     border: 1px solid var(--textColor);
     display: flex;
-    align-items: center;
+    align-items: center; 
     justify-content: center;
     cursor: pointer;
 }
@@ -35,6 +35,30 @@
     left: 50px;
 }
 
+.input {
+    padding: 50px;
+    font-size: 64px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.input::placeholder {
+    color: #b3b3b1;
+}
+
 .addButton {
     border-color: #1a8917;
+}
+
+.publish {
+    position: absolute;
+    top: 30px;
+    right: 20px;
+    padding: 10px 20px;
+    bottom: none;
+    background-color: #1a8917;
+    color: white;
+    cursor: pointer;
+    border-radius: 20px;
 }

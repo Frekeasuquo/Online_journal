@@ -12,7 +12,7 @@ const WritePage = () => {
     const [value, setValue] = useState("")
     return (
         <div className={styles.container}>    
-            <input type='text' placeholder='Title' />
+            <input type='text' placeholder='Title' className={styles.input}/>
             <div className={styles.editor}>
                 <button className={styles.button} onClick= {() => setOpen(!open)}>
                     <Image src="/plus.png" alt='' width={16} height={16} />
@@ -39,6 +39,7 @@ const WritePage = () => {
                     placeholder="Tell your story..."
                 />
             </div>
+            <button className={styles.publish}>Publish</button>
         </div>
     )
 }
