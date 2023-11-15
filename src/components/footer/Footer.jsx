@@ -12,38 +12,54 @@ const Footer = () => {
                         <h1 className={styles.logoText}>Frekes Blog</h1>
                     </div>
                     <p className={styles.desc}>
-                        We offer the latest news from around the world.
-                        We offer the latest news from around the world.
-                        We offer the latest news from around the world.
+                        Freke Blog is the best blog.
+                        Freke Blog is the best blog.
+                        Freke Blog is the best blog.
                     </p>
                     <div className={styles.icons}>
-                    <Image src="/facebook.png" alt="facebook" width={18} height={18} />
-                    <Image src="/instagram.png" alt="instagram" width={18} height={18} />
-                    <Image src="/tiktok.png" alt="tiktok" width={18} height={18} />
-                    <Image src="/youtube.png" alt="youtube" width={18} height={18} />
+                        <Link href="https://github.com/Frekeasuquo" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                            <Image src="/github-logo.png" alt="facebook" width={24} height={24} >
+                            </Image>
+                        </Link>
+                        <Link href="https://www.linkedin.com/in/ndifreke-asuquo/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                            <Image src="/linkedin-logo.png" alt="facebook" width={24} height={24} >
+                            </Image>
+                        </Link>
+                        
+                        <Link href="https://twitter.com/Ndifreke_01" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                            <Image src="/x-logo-png.png" alt="facebook" width={24} height={24} >
+                            </Image>
+                        </Link>
+                    </div>
                 </div>
-            </div>
             <div className={styles.links}>
                 <div className={styles.list}>
                     <span className={styles.listTitle}>Links</span>
                     <Link href="/">Homepage</Link>
-                    <Link href="/">Blog</Link>
+                    <Link href="/blog">Blog</Link>
                     <Link href="/">About</Link>
                     <Link href="/">Contact</Link>
                 </div>
                 <div className={styles.list}>
                     <span className={styles.listTitle}>Tags</span>
-                    <Link href="/">Style</Link>
-                    <Link href="/">Fashion</Link>
-                    <Link href="/">Coding</Link>
-                    <Link href="/">Travel</Link>
+                    <Link href="/blog?cat=style">Style</Link>
+                    <Link href="/blog?cat=fashion">Fashion</Link>
+                    <Link href="/blog?cat=coding">Coding</Link>
+                    <Link href="/blog?cat=travel">Travel</Link>
                 </div>
                 <div className={styles.list}>
                     <span className={styles.listTitle}>Social</span>
-                    <Link href="/">Facebook</Link>
-                    <Link href="/">Instagram</Link>
-                    <Link href="/">Tiktok</Link>
-                    <Link href="/">Youtube</Link>
+                        <Link href="https://github.com/Frekeasuquo" target="_blank"    rel="noopener noreferrer" className={styles.link}>
+                            Github
+                        </Link>
+
+                        <Link href="https://www.linkedin.com/in/ndifreke-asuquo/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                            Linkedin
+                        </Link>
+                        
+                        <Link href="https://twitter.com/Ndifreke_01"     target="_blank" rel="noopener noreferrer" className={styles.link}>
+                            X
+                        </Link>
                 </div>
             </div>
         </div>

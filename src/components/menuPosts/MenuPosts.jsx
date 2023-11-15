@@ -2,7 +2,26 @@ import Link from "next/link";
 import Image from "next/image";
 import styles from "./menuPosts.module.css"
 
-const MenuPosts = ({withImage}) => {
+// const getData = async(slug) => {
+
+//     const res = await fetch(
+//         `http://localhost:3000/api/posts/${slug}`, {
+//             cache: "no-store"
+//     });
+
+//     if(!res.ok) {
+//         throw new Error("Failed");
+//     }
+
+//     return res.json();
+// }
+
+
+const MenuPosts = async ({withImage}) => {
+
+    // const data = getData()
+
+    // console.log(data)
     return (
         <div className={styles.items}>
                 <Link href="/" className={styles.item}>
@@ -11,7 +30,7 @@ const MenuPosts = ({withImage}) => {
                     </div>)}
                     <div className={styles.textContainer}>
                         <span className={`${styles.category} ${styles.travel}`}>Travel</span>
-                        <h3 className= {styles.postTitle}>This is your product for the future, so make good choices</h3>
+                        <h3 className= {styles.postTitle}>This is your product for the future, so make good choices....</h3>
                         <div className= {styles.detail}>
                             <span className= {styles.username}>John Doe</span>
                             <span className= {styles.date}>10.09.2023</span>

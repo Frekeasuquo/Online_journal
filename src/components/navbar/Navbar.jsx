@@ -10,10 +10,21 @@ const Navbar = () => {
     return (
         <div className={styles.container}>
             <div className={styles.social}>
-                <Image src="/facebook.png" alt="facebook" width={24} height={24} />
-                <Image src="/instagram.png" alt="instagram" width={24} height={24} />
-                <Image src="/tiktok.png" alt="tiktok" width={24} height={24} />
-                <Image src="/youtube.png" alt="youtube" width={24} height={24} />
+                
+                <Link href="https://github.com/Frekeasuquo" target="_blank"         rel="noopener noreferrer" className={styles.link}>
+                    <Image src="/github-logo.png" alt="facebook" width={24} height={24} >
+                    </Image>
+                </Link>
+
+                <Link href="https://www.linkedin.com/in/ndifreke-asuquo/" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                    <Image src="/linkedin-logo.png" alt="facebook" width={24} height={24} >
+                    </Image>
+                </Link>
+                
+                <Link href="https://twitter.com/Ndifreke_01" target="_blank" rel="noopener noreferrer" className={styles.link}>
+                    <Image src="/x-logo-png.png" alt="facebook" width={24} height={24} >
+                    </Image>
+                </Link>
             </div>
             <div className={styles.logo}>Frekes logo</div>
             <div className={styles.links}>
