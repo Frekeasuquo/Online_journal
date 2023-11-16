@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import styles from './writePage.module.css'
 import { useState, useEffect } from 'react'
-import ReactQuill from "react-quill"
+// import ReactQuill from "react-quill"
 import "react-quill/dist/quill.bubble.css"
 import { useRouter } from 'next/navigation'
 import { useSession } from 'next-auth/react'
@@ -16,7 +16,7 @@ const WritePage = () => {
     const {status} = useSession
 
     const router = useRouter();
-    
+    const ReactQuill = dynamic(() => import( "react-quill"), {ssr: false})
     const [file, setFile] = useState(null)
     const [open, setOpen] = useState(false)
     const [media, setMedia] = useState("")
