@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "migrate": "dotenv -e .env.local -- npx prisma studio"
   },
   "dependencies": {
     "encoding": "^0.1.13",
@@ -25,4 +26,5 @@
     "@prisma/client": "^5.4.2",
     "prisma": "^5.4.2"
   }
+  
 }
